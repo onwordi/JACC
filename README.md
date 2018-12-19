@@ -24,11 +24,11 @@ This project is live on heroku:
 2. User clicks on [ Add to list ] button
 
 3. User see the **Shopping List page**
-  a) User will see a **form** with the following fields: Item, Quantity, Approx Price, to add their data
-  b) User will submit form
+  <br>a) User will see a **form** with the following fields: Item, Quantity, Approx Price, to add their data
+  <br>b) User will submit form
   
 4. User will be taken to **Current list page** to view the whole list
-  a) There will be a button [ Add more items ] to add more items
+  <br>a) There will be a button [ Add more items ] to add more items
   
 5. User will be taken back to Shopping list page to add more
 
@@ -45,4 +45,5 @@ This project is live on heroku:
 
 
 ## Stretch goal
-- User login/auth
+- User login/authentication
+
