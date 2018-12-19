@@ -19,6 +19,20 @@ This project is live on heroku:
 - For testing: run npm test (Database testing need additional credentials)
 
 ## :ok_woman: User journey
+1. User goes to the website and sees a **Welcome User page**
+
+2. User clicks on [ Add to list ] button
+
+3. User see the **Shopping List page**
+  a) User will see a **form** with the following fields: Item, Quantity, Approx Price, to add their data
+  b) User will submit form
+  
+4. User will be taken to **Current list page** to view the whole list
+  a) There will be a button [ Add more items ] to add more items
+  
+5. User will be taken back to Shopping list page to add more
+
+6. All pages will have a link to the Home page
 
 ## :bulb: What we worked on
 :heavy_check_mark: Day 1
@@ -28,3 +42,7 @@ This project is live on heroku:
 :heavy_check_mark: Day 2
 
 :heavy_check_mark: Day 3 (Based on raised issues)
+
+
+## Stretch goal
+- User login/auth
