@@ -1,7 +1,7 @@
 # CAJC _ Shopping list :purse:
 This project is live on heroku: 
 
-## To run the project locally computer 
+## :computer: To run the project locally computer 
 1. Clone of fork the repo
 
 2. Go into the project folder cd CAJC
@@ -18,11 +18,12 @@ This project is live on heroku:
 
 - For testing: run npm test (Database testing need additional credentials)
 
-## User journey
+## :ok_woman: User journey
 
-## What we worked on
-:heavy_check_mark: Day 1 
-![image](https://user-images.githubusercontent.com/36998110/50238746-25874a80-03b8-11e9-8a0f-374860479dc1.png)
+## :bulb: What we worked on
+:heavy_check_mark: Day 1
+
+![whiteboarding](https://user-images.githubusercontent.com/36998110/50238746-25874a80-03b8-11e9-8a0f-374860479dc1.png)
   
 :heavy_check_mark: Day 2
 
