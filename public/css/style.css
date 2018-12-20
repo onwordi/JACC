@@ -1,3 +1,78 @@
+:root {
+    --white-color: #fcffff;
+    --green-color: #19A592;
+    --red-color: #E24A55;
+    --yellow-color: #FDC743;
+    --black-color: #202020;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  color: var(--black-color);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+  height: 500px;
+}
+
+.h2-greeting{
+  font-size: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.margin--left{
+  margin-left: 100px;
+}
+
+.background--yellow{
+  background-color: var(--yellow-color);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 0 auto;
+  z-index: -100;
+  left:400px;
+}
+.font--red{
+  color: var(--red-color);
+}
+h2{
+  font-size: 6rem;
+  font-family: 'Oleo Script', cursive;
+  margin: 10px auto;
+  padding: 40px;
+  width: 440px;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  background-color: var(--green-color);
+  height: 127px;
+  color: var(--white-color);
+}
+
+footer p {
+  padding: 40px;
+}
+
+
 /*Form styles*/
 form {
   width: 60%;
@@ -7,3 +82,5 @@ form {
 .form-item input {
   width: 70%;
 }
+
+
