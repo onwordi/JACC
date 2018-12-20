@@ -67,7 +67,7 @@ h1 a {
   margin: 0 auto;
   z-index: -100;
   left:400px;
-  border: 20px solid rgba(255, 255, 255, 0.5);
+  border: 20px solid rgba(255, 255, 255, 0.6);
 }
 .font--red{
   color: var(--red-color);
@@ -76,7 +76,7 @@ h1 a {
   font-size: 6rem;
   font-family: 'Oleo Script', cursive;
   margin: 10px auto;
-  padding: 40px;
+  padding: 80px;
   width: 440px;
 }
 
