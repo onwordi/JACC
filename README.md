@@ -1,5 +1,5 @@
 # CAJC _ Shopping list :purse:
-This project is live on heroku: 
+This project is live on [heroku](https://jacc-shopping.herokuapp.com/)
 
 ## :computer: To run the project locally computer 
 1. Clone of fork the repo
