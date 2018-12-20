@@ -39,13 +39,16 @@ With this app, we will create an MVP, using just one user Jane Doe, to show how 
 
 6. All pages will have a link to the Home page
 
+7. Colour Scheme
+![color-scheme](https://i.imgur.com/WIXODYM.png)
+
 ## :bulb: What we worked on
 :heavy_check_mark: Day 1<br>
 `Green` : Client side pages<br>
 `Purple` : Database<br>
 `Red & Bottom purple` : Express with views breakdown<br>
 ![whiteboarding](https://user-images.githubusercontent.com/36998110/50238746-25874a80-03b8-11e9-8a0f-374860479dc1.png)
-  
+
 :heavy_check_mark: Day 2
 - Work on the partials
 - Style HTML & CSS 
