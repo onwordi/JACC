@@ -2,10 +2,12 @@ const express = require('express');
 const path = require('path');
 const router = express.Router();
 
-const welcome = require('./welcome');
+const shoppingList = require('./shoppingList');
+const currentList = require('./currentList');
 const error = require('./error');
 
-router.get('/welcome', welcome.get);
+router.get('/shopping-list', shoppingList.get);
+router.get('/current-list', currentList.get);
 router.use(error.client);
 router.use(error.server);
 
