@@ -1,8 +1,9 @@
 const express = require('express');
 const path = require('path');
-const favicon = require('serve-favicon');
+const exphbs = require('express-handlebars');
+// const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
-
+const compression = require('compression');
 const controllers = require('./controllers/index');
 
 //create express app
@@ -19,6 +20,16 @@ app.use(
 ));
 
 app.use(controllers);
+
+app.engine(
+    'hbs',
+    exphbs({
+        extname: 'hbs',
+        partialsDir: path.join(__dirname, 'views', 'partials'),
+        layoutsDir: path.join(__dirname, 'views', 'layouts'),
+        defaultLayout: 'main'
+    })
+);
 
 
 module.exports = app;
