@@ -6,10 +6,10 @@
     --black-color: #202020;
 }
 
-html{
+/* html{
   width: 100%;
   height: 100%;
-}
+} */
 
 body{
   color: var(--black-color);
@@ -38,7 +38,7 @@ h1 a {
 }
 
 .wrapper{
-  min-height: 500px;
+  min-height: calc(100vh - 70px)
 }
 
 .h2-greeting{
@@ -76,7 +76,7 @@ h1 a {
   font-size: 6rem;
   font-family: 'Oleo Script', cursive;
   margin: 10px auto;
-  padding: 80px;
+  padding: 53px;
   width: 440px;
 }
 
@@ -90,7 +90,7 @@ footer{
   justify-content: center;
   align-content: flex-end;
   background-color: var(--green-color);
-  height: 127px;
+  height: 100%;
   color: var(--white-color);
 }
 
@@ -139,6 +139,25 @@ form button {
   margin: 20px auto;
   text-align: center;
   width: 200px;
-  height: 30px;
+  height: 50px;
   display: block;
+}
+
+button {
+  margin: -53px auto 0;
+  display: block;
+  background-color: var(--black-color);
+  height: 50px;
+  width: 150px;
+  border: none;
+  color: var(--white-color);
+  box-shadow: 5px 5px 15px var(--black-color);
+  font-size: 1.3rem;
+  transition: ease 0.5s all;
+}
+
+button:hover {
+  transition: ease 0.5s all;
+  background-color: var(--green-color);
+  color: var(--white-color);
 }
