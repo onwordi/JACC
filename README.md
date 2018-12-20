@@ -1,10 +1,10 @@
-# CAJC _ Shopping list :purse:
+# JACC _ Shopping list :purse:
 This project is live on [heroku](https://jacc-shopping.herokuapp.com/)
 
 ## :computer: To run the project locally computer 
 1. Clone of fork the repo
 
-2. Go into the project folder cd CAJC
+2. Go into the project folder cd JACC
 
 3. Run npm i
 
