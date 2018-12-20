@@ -1,0 +1,9 @@
+/*Form styles*/
+form {
+  width: 60%;
+  min-width: 350px;
+}
+
+.form-item input {
+  width: 70%;
+}
