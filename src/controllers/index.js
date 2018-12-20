@@ -1,9 +1,15 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 const router = express.Router();
 
-const error = require('./error');
+const shoppingList = require("./shoppingList");
+const currentList = require("./currentList");
+const getList = require("./getList");
+const error = require("./error");
 
+router.get("/shopping-list", shoppingList.get);
+router.post("/shopping-list", getList.post);
+router.get("/current-list", currentList.get);
 router.use(error.client);
 router.use(error.server);
 

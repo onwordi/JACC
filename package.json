@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test_db": "tape test NODE_ENV=test node test/db.test.js | tap-spec",
-    "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "test": "NODE_ENV=test node src/tests/db.test.js | tap-spec",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.7.3",
     "env2": "^2.2.2",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
