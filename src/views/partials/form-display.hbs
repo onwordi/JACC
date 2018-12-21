@@ -2,16 +2,34 @@
   <div class="form-grid">
     <div class="form-item item-border">
       <p>Name</p>
+      {{#each list}}
+      <li>{{this.full_name}}</li>
+      {{/each}}
     </div>
     <div class="form-item item-border">
       <p>Item</p>
+      {{#each list}}
+      <li>{{this.item}}</li>
+      {{/each}}
     </div>
     <div class="form-item item-border">
       <p>Quantity</p>
+      {{#each list}}
+      <li>{{this.quantity}}</li>
+      {{/each}}
     </div>
     <div class="form-item item-border">
       <p>Approximate price</p>
+      {{#each list}}
+      <li>{{this.price}}</li>
+      {{/each}}
     </div>
   </div>
+
+  <!-- <ul>
+    {{#each list}}
+      <li>item: {{this.item}} quantity: {{this.quantity}} price: {{this.price}}</li>
+    {{/each}}
+  </ul> -->
   <button type="submit">Add your item</button>
 </form>
