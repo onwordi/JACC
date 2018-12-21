@@ -8,29 +8,36 @@ exports.post = (req, res) => {
   const price = req.body.price;
 
   dbConnection.query(
-
     "INSERT INTO users (full_name) VALUES ($1) RETURNING id",
     [name],
-    (err, userRes) => {
-
+    (err, success) => {
+      // console.log(personId); // logs out object for person, passed into bookings
       if (err) return err;
       dbConnection.query(
-
         "INSERT INTO shoppinglist (user_id, item, quantity, price) VALUES ($1, $2, $3, $4)",
-        [userRes.rows[0].id, item, quantity, price],
+        [success.rows[0].id, item, quantity, price],
         err => {
-
           console.log("inserted into shoppinglist database");
           if (err) return err;
-          console.log('error!!!', err)
-        });
-    });
+          console.log("error!!!", err);
+        }
+      );
+    }
+  );
+
+  console.log("222", name);
+
+  res.redirect(`/current-list/${name}`);
+  console.log("333", name);
 };
 
-exports.get = (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "views", "currentList.hbs"));
-};
+// cb(null);
 
-exports.get = (req, res) => {
-  res.render("shoppingList");
-};
+// return name;
+
+// exports.get = (req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "views", "currentList.hbs"));
+
+// exports.get = (req, res) => {
+//   res.render("shoppingList");
+// };
