@@ -6,11 +6,9 @@
     --black-color: #202020;
 }
 
-/* html{
-  width: 100%;
-  height: 100%;
-} */
-
+.clear {
+  clear: both;
+}
 body{
   color: var(--black-color);
   font-family: 'Montserrat', sans-serif;
@@ -35,6 +33,7 @@ h1 a {
   justify-content: center;
   color: var(--black-color);
   text-decoration: none;
+  /* background-color: rgba(255,255,255,0.6); */
 }
 
 .wrapper{
@@ -104,19 +103,33 @@ form {
   min-width: 350px;
 }
 
+
+
 .form-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 4fr);
-  grid-template-rows: repeat(2, 2fr);
   margin: auto;
-  width: 80%;
+  font-size: 1.3rem;
 }
+
+li {
+  list-style-type: none;
+}
+
 .item-border {
+  width: 24%;
+  float: left;
+}
+
+.form-item h3 {
   border-bottom: 2px solid var(--black-color);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .form-item p {
-  text-align: center;
+  font-weight: 800;
 }
 
 #shopping-form {
