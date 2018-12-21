@@ -17,7 +17,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "nodemon": "^1.18.9",
-    "pg": "^7.7.1"
+    "pg": "^7.7.1",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "supertest": "^3.3.0",
