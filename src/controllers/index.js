@@ -9,8 +9,8 @@ const error = require("./error");
 
 router.get("/shopping-list", shoppingList.get);
 router.post("/shopping-list", getList.post);
-router.get("/current-list", currentList.get);
 router.get("/current-list/:name", currentList.get);
+router.get("/current-list", currentList.get);
 
 // router.get("/current-list", currentList.getShoppingList);
 router.use(error.client);

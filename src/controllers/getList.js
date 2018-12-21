@@ -20,12 +20,12 @@ exports.post = (req, res) => {
       }
     }
   );
-  console.log("222", name);
+  // console.log("222", name);
 
   res.redirect(`/current-list/${name}`);
-  console.log("333", name);
+  // console.log("333", name);
 
-  return name;
+  // return name;
 };
 
 // exports.get = (req, res) => {
