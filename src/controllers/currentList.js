@@ -6,7 +6,7 @@ const currentList = require("./currentList");
 const getShoppingList = (req, res, cb) => {
   console.log("getShoppingList func");
   const name = req.params.name;
-  console.log("real", name);
+  console.log("realllll", name);
 
   dbConnection.query(
     //   // return personId which contains people_id - to be passed in to bookings table
