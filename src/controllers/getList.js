@@ -16,10 +16,12 @@ exports.post = (req, res) => {
       dbConnection.query(
         "INSERT INTO shoppinglist (user_id, item, quantity, price) VALUES ($1, $2, $3, $4)",
         [success.rows[0].id, item, quantity, price],
-        err => {
+        (err, result) => {
           console.log("inserted into shoppinglist database");
           if (err) return err;
-          console.log("error!!!", err);
+          res.redirect(`/current-list/${name}`);
+          
+          // console.log("error!!!", err);
         }
       );
     }
@@ -27,7 +29,7 @@ exports.post = (req, res) => {
 
   console.log("222", name);
 
-  res.redirect(`/current-list/${name}`);
+  // res.redirect(`/current-list/${name}`);
   console.log("333", name);
 };
 
