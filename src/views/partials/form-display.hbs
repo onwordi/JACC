@@ -1,35 +1,36 @@
 <form id="shopping-display" action="/shopping-list" method="get">
-  <div class="form-grid">
-    <div class="form-item item-border">
-      <p>Name</p>
+  <ul class="form-grid">
+    <li class="form-item item-border">
+      <h3>Name</h3>
       {{#each list}}
-      <li>{{this.full_name}}</li>
+      <p>{{this.full_name}}<p>
       {{/each}}
-    </div>
-    <div class="form-item item-border">
-      <p>Item</p>
+    </li>
+    <li class="form-item item-border">
+      <h3>Item</h3>
       {{#each list}}
-      <li>{{this.item}}</li>
+      <p>{{this.item}}<p>
       {{/each}}
-    </div>
-    <div class="form-item item-border">
-      <p>Quantity</p>
+    </li>
+    <li class="form-item item-border">
+      <h3>Quantity</h3>
       {{#each list}}
-      <li>{{this.quantity}}</li>
+      <p>{{this.quantity}}<p>
       {{/each}}
-    </div>
-    <div class="form-item item-border">
-      <p>Approximate price</p>
+    </li>
+    <li class="form-item item-border">
+      <h3>Approximate price</h3>
       {{#each list}}
-      <li>{{this.price}}</li>
+      <p>{{this.price}}<p>
       {{/each}}
-    </div>
-  </div>
+    </li>
+  </ul>
 
   <!-- <ul>
     {{#each list}}
       <li>item: {{this.item}} quantity: {{this.quantity}} price: {{this.price}}</li>
     {{/each}}
   </ul> -->
+  <div class="clear"></div>
   <button type="submit">Add your item</button>
 </form>
