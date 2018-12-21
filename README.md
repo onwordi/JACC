@@ -12,7 +12,7 @@ This project is live on [heroku](https://jacc-shopping.herokuapp.com/)
 ```export DB_URL = postgres://_your_db_info_```
 5. Run npm start
 
-6. Go to localhost:5000 for the home page
+6. Go to localhost:4040 for the home page
 
 7. Enjoy our amazing shopping list :boom:
 
@@ -39,14 +39,20 @@ With this app, we will create an MVP, using just one user Jane Doe, to show how 
 
 6. All pages will have a link to the Home page
 
+7. Colour Scheme
+![color-scheme](https://i.imgur.com/WIXODYM.png)
+
 ## :bulb: What we worked on
 :heavy_check_mark: Day 1<br>
 `Green` : Client side pages<br>
 `Purple` : Database<br>
 `Red & Bottom purple` : Express with views breakdown<br>
 ![whiteboarding](https://user-images.githubusercontent.com/36998110/50238746-25874a80-03b8-11e9-8a0f-374860479dc1.png)
-  
+
 :heavy_check_mark: Day 2
+- Work on the partials
+- Style HTML & CSS 
+- Post and Get queries from the database
 
 :heavy_check_mark: Day 3 (Based on raised issues)
 
@@ -57,6 +63,7 @@ With this app, we will create an MVP, using just one user Jane Doe, to show how 
 - Good code rotation
 - Making sure each team member understood each step and logic for the project. (Considering some absences)
 - Added inital tests before writing logic
+- Use router in controller instead of app.get
 
 ## :muscle: Stretch goal
 - Login/Logout functionality to link multiply people to view all their different shopping lists.
