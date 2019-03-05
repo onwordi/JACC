@@ -1,5 +1,6 @@
 # JACC _ Shopping list :purse:
 This project is live on [heroku](https://jacc-shopping.herokuapp.com/)
+#### Created by: @onwordi @ aterna01 @wright1 @whooolia
 
 ## :computer: To run the project locally computer 
 1. Clone of fork the repo
